@@ -8,6 +8,7 @@
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/webp-logo.ico">
 
     <title>Watchout!</title>
 </head>
@@ -20,6 +21,9 @@
                      <h1 class="display-2 text-align-center">Watchout!</h1>
                      <p class="display-6 text-align-center text-muted">Are these images of messages or webshops trustworthy?</p>
                  </div>
+                 <div class="col-md-5 text-center text-md-start">
+                    <img src="assets/logo.png" alt="onze goeie docent; maik" class="img-fluid">
+                 </div>
              </div>
          </div>
      </section>
@@ -29,15 +33,42 @@
 
         <!-- question 1 -->
          <div class="container-lg align-items-center">
-            <img id="img-scale" src="assets/marktplaats1.png" alt="foto1" class="img-fluid">
 
+            <div class="col-sm-8 my-5 text-align-center">
+                <img id="img-scale" src="assets/marktplaats1.png" alt="foto1" class="img-fluid">
+                <button onclick="Correct('This product can be trusted quite easily due to it having a high user rating. Additionally the one who posted this product is active on the platform for quite a while!')" class="btn btn-success me-5">Trustworthy</button>
+                <button onclick="Wrong('This webshop page is pretty trustworthy. You can see this by the rating and the amount of years the user has been active on the platform.')" class="btn btn-danger">Scam</button>
+            </div>
 
          </div>
+
+         <!-- question 2 -->
+         <div class="container-lg align-items-center">
+
+            <div class="col-sm-8 my-5 text-align-center">
+                <img id="img-scale" src="assets/marktplaats2.png" alt="foto1" class="img-fluid">
+                <button onclick="Wrong('This product is most likely a scam or just a really bad product, this is evident if you look at the user rating of the product and the amount of time the user has been active on the platform.')" class="btn btn-success me-5">Trustworthy</button>
+                <button onclick="Correct('Due to the bad user reviews and how recent the user joined we can conclude that this is most likely a scam!')" class="btn btn-danger">Scam</button>
+            </div>
+
+         </div>
+
+         <!-- question 3 -->
+         <div class="container-lg align-items-center">
+
+            <div class="col-sm-8 my-5 text-align-center">
+                <img id="img-scale" src="assets/sms1.png" alt="foto1" class="img-fluid">
+                <button onclick="Wrong('This sms from a random personal phone number is a scam! Additionally the link looks way too sketchy to be real.')" class="btn btn-success me-5">Trustworthy</button>
+                <button onclick="Correct('Its way too uncommon for this to actually happen, addictionally the person is asking you to click one a sketchy link! Do not press that link!')" class="btn btn-danger">Scam</button>
+            </div>
+
+         </div>
+
      </section>
 
     <script>
-        function Correct(){
-            alert("Correct! :D")
+        function Correct(reason){
+            alert("Correct! " + reason)
         }
         function Wrong(reason){
             alert("Wrong! " + reason)
