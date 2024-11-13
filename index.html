@@ -19,7 +19,7 @@
              <div class="row justify-content-center align-items-center">
                  <div class="col-md-5 text-center text-md-start">
                      <h1 class="display-2 text-align-center">Watchout!</h1>
-                     <p class="display-6 text-align-center text-muted">Are these images of messages or webshops trustworthy?</p>
+                     <p class="display-6 text-align-center text-muted">Zijn deze screenshots vertrouwbaar of een scam?</p>
                  </div>
                  <div class="col-md-5 text-center text-md-start">
                     <img src="assets/logo.png" alt="onze goeie docent; maik" class="img-fluid">
@@ -30,48 +30,70 @@
 
      <!-- questions -->
      <section id="questions" class="bg-light mt5 md5">
-
+        <hr>
         <!-- question 1 -->
          <div class="container-lg align-items-center">
 
             <div class="col-sm-8 my-5 text-align-center">
                 <img id="img-scale" src="assets/marktplaats1.png" alt="foto1" class="img-fluid">
-                <button onclick="Correct('This product can be trusted quite easily due to it having a high user rating. Additionally the one who posted this product is active on the platform for quite a while!')" class="btn btn-success me-5">Trustworthy</button>
-                <button onclick="Wrong('This webshop page is pretty trustworthy. You can see this by the rating and the amount of years the user has been active on the platform.')" class="btn btn-danger">Scam</button>
+                <button onclick="Correct('Deze wwebshop pagina is zeer vertrouwbaar, je kan dit zien dankzij de ratings die die heeft en dat de gebruiker al vele jaren op het platform actief is.')" class="btn btn-success me-5">Vertrouwbaar</button>
+                <button onclick="Wrong('Deze wwebshop pagina is zeer vertrouwbaar, je kan dit zien dankzij de ratings die die heeft en dat de gebruiker al vele jaren op het platform actief is.')" class="btn btn-danger">Scam</button>
             </div>
 
          </div>
-
+         <hr>
          <!-- question 2 -->
          <div class="container-lg align-items-center">
 
             <div class="col-sm-8 my-5 text-align-center">
                 <img id="img-scale" src="assets/marktplaats2.png" alt="foto1" class="img-fluid">
-                <button onclick="Wrong('This product is most likely a scam or just a really bad product, this is evident if you look at the user rating of the product and the amount of time the user has been active on the platform.')" class="btn btn-success me-5">Trustworthy</button>
-                <button onclick="Correct('Due to the bad user reviews and how recent the user joined we can conclude that this is most likely a scam!')" class="btn btn-danger">Scam</button>
+                <button onclick="Wrong('Dit product is waarschijnlijk een scam of een slecht product. Dit kan je zien dankzij de slechte reviews en dat de gebruiker niet zo lang op de website actief is.')" class="btn btn-success me-5">Vertrouwbaar</button>
+                <button onclick="Correct('Dankzij de slechte reviews en de niet zo lang actieve poster kunnen we concluderen dat dit waarschijnlijk een scam is!')" class="btn btn-danger">Scam</button>
             </div>
-
-         </div>
-
+        </div>
+        <hr>
          <!-- question 3 -->
          <div class="container-lg align-items-center">
 
             <div class="col-sm-8 my-5 text-align-center">
                 <img id="img-scale" src="assets/sms1.png" alt="foto1" class="img-fluid">
-                <button onclick="Wrong('This sms from a random personal phone number is a scam! Additionally the link looks way too sketchy to be real.')" class="btn btn-success me-5">Trustworthy</button>
-                <button onclick="Correct('Its way too uncommon for this to actually happen, addictionally the person is asking you to click one a sketchy link! Do not press that link!')" class="btn btn-danger">Scam</button>
+                <button onclick="Wrong('Deze sms van een persoonlijk telefoon nummer is een scam! Het bericht is veel te verdacht en samen met de link kunnen we zeggen dat het 100% een scam is.')" class="btn btn-success me-5">Vertrouwbaar</button>
+                <button onclick="Correct('Dit is een van de meest voorkomende scam berichten die je kan krijgen via sms. Druk niet op de link!')" class="btn btn-danger">Scam</button>
             </div>
 
          </div>
+         <hr>
+         <!-- question 4 -->
+         <div class="container-lg align-items-center">
 
+            <div class="col-sm-8 my-5 text-align-center">
+                <img id="img-scale" src="assets/iCs.png" alt="foto1" class="img-fluid">
+                <button onclick="Wrong('Normaliter vraagt de ICS niet om op een linkje van hun te drukken dus daarom kunnen we bijna garanderen dat het een scam is!')" class="btn btn-success me-5">Vertrouwbaar</button>
+                <button onclick="Correct('Normaliter vraagt de ICS niet om op een linkje van hun te drukken dus daarom kunnen we bijna garanderen dat het een scam is!')" class="btn btn-danger">Scam</button>
+            </div>
+
+         </div>
+         <hr>
+        <!-- question 5 -->
+        <div class="container-lg align-items-center">
+
+            <div class="col-sm-8 my-5 text-align-center">
+                <img id="img-scale" src="assets/postnl.png" alt="foto1" class="img-fluid">
+                <button onclick="Wrong('Als je goed kijkt kan je zien dat de link waar postnl naar vraagt om op te klikken niet naar een postnl site lijdt maar naar een scam site!')" class="btn btn-success me-5">Vertrouwbaar</button>
+                <button onclick="Correct('Als je goed kijkt kan je zien dat de link waar postnl naar vraagt om op te klikken niet naar een postnl site lijdt maar naar een scam site!')" class="btn btn-danger">Scam</button>
+            </div>
+
+         </div>
+        <hr>
      </section>
 
+     <!-- functions -->
     <script>
         function Correct(reason){
             alert("Correct! " + reason)
         }
         function Wrong(reason){
-            alert("Wrong! " + reason)
+            alert("Verkeerd! " + reason)
         }
     </script>
 
